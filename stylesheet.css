@@ -1,0 +1,281 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.topbar{
+	border-top: 5px solid darkred;
+}
+
+.header h1{
+	font-family: "Anders", sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	color:darkred;
+	margin-top: 50px;
+	margin-bottom: auto;
+	padding-left: 5%;
+	background-color: white;
+}
+
+.header{
+	border-bottom: 1px solid lightgray;
+	height: 100px;
+	margin: auto;
+}
+
+.navigation{
+	width: 900px;
+	float:right;
+}
+
+.navigation ul li{
+	float:right;
+	padding: 0px 25px 20px 10px;
+	margin: 0 0px 5px 0;
+	list-style-type: none;
+}
+
+.navigation a:link {
+		color:black;
+		font-family: sans-serif;
+		font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+		color:darkred;
+		background-color: white;
+    text-decoration: none;
+		border-bottom: 3px solid darkred;
+}
+
+/*.portfolioheader img{
+	width:100%;
+	max-height: 650px;
+	background-color: white;
+	opacity: 0.9;
+  filter:alpha(opacity=90);
+	border-bottom: 1px solid lightgray;
+}*/
+
+.portfolioheader{
+		background-image: url("images/food.png");
+		background-repeat:repeat;
+		width:100%;
+		height: 500px;
+		position: 0;
+}
+
+.portfolioheader_title{
+	top: 28%;
+	position: relative;
+	background-color: transparent;
+	margin-bottom: 0px;
+}
+
+.portfolioheader h1{
+	color: white;
+	padding: 30px;
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+	font-style: bold;
+	font-family: "Anders";
+	font-size: 2.2em ;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.75);(0, 0, 10);
+}
+
+.portfolioheader a{
+	text-decoration: none;
+}
+
+.portfolioheader_title p{
+	background-color:inherit;
+	margin-left: 25%;
+	margin-right: 25%;
+	left: 35%;
+	right: 28%;
+	padding-top: 20px;
+	font-size: 1.4em ;
+	font-family: sans-serif;
+	font-weight: 100;
+
+}
+
+#button{
+	width: 250px;
+	height:45px;
+	border-radius: 5px;
+	border: 3px solid white;
+	background-color: transparent;
+}
+
+#button a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	font-family: Verdana;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+#button:hover{
+	text-decoration: none;
+	background-color: white;
+}
+
+.toprecipes{
+	background-color: white;
+	padding: 6%;
+	margin-left: 3%;
+	margin-right: 2%
+}
+
+.toprecipes h1{
+	font-family: "Anders";
+	font-size: 2.2em;
+	background-color:transparent;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+.leftimg {
+	width:325px;
+	padding:5px;
+	background-color: white;
+	margin-top: inherit;
+	display: inline-block;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.leftimg img:hover{
+  opacity: 0.89;
+  filter: alpha(opacity=90);
+	border: 7px double black;
+	background-color: white;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+ 	-moz-box-sizing:border-box;
+ 	-ms-box-sizing:border-box;
+}
+
+#toprecipes a {
+	background-color: white;
+	color:black;
+	font-size: 1.4em;
+	margin-top: 10px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0;
+	height: 50px;
+}
+
+.toprecipes a {
+	background-color: white;
+	color:black;
+	font-size: 1em;
+	margin-top: 10px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0;
+	height: 50px;
+}
+
+.toprecipes p {
+	color:darkgray;
+	font-size: 0.8em;
+	font-family: sans-serif;
+	height: 30px;
+	float: right;
+	padding-top: 3px;
+}
+
+.leftimg i {
+	background-color: white;
+	color: darkgray;
+	height: 40px;
+	padding-right: 5px;
+	float: right;
+}
+
+.leftimg # {
+	position: absolute;
+	color:white;
+	background-color: transparent;
+	border: 1px solid white;
+}
+
+.container{
+	width:100%;
+	height:400px;
+}
+
+.left{
+	float:left;
+	height:400px;
+	width:40%;
+}
+
+.left img{
+	padding-left: 75px;
+	padding-top: 160px;
+	width:400px;
+}
+
+.right{
+	height:500px;
+	width:58%;
+	float:right;
+	margin-top: 155px;
+	padding-top: 40px;
+	margin-right: 20px;
+}
+
+.right h1{
+	font-family:"Anders";
+	font-size: 2.5em;
+	padding-left: 50px;
+	color: darkred;
+}
+
+.right h2{
+	font-family:sans-serif;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	font-weight: bold;
+	padding:10px 60px 10px 50px;
+}
+
+.right p{
+	font-family:sans-serif;
+	font-size: .95em;
+	line-height: 1.4em;
+	padding: 0 90px 0 50px;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.footer{
+	background-color:white;
+	border-bottom: 20px solid darkred;
+	width:100%;
+	height: 8px;
+	clear: both;
+	border-top: 2px solid darkred;
+}
