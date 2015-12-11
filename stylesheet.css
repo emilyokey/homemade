@@ -3,44 +3,40 @@
 	padding:0;
 }
 
-.topbar{
-	border-top: 5px solid darkred;
+/*.topbar{
+	border-top: 5px solid black;
+}*/
+.topcontainer {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,.55);
+}
+
+.header{
+	width: 50%;
 }
 
 .header h1{
 	font-family: "Anders", sans-serif;
-	font-size: 2.5em;
+	font-size: 2.3em;
 	font-weight: bold;
 	color:darkred;
-	margin-top: 50px;
-	margin-bottom: auto;
-	padding-left: 5%;
-	background-color: white;
-}
-
-.header{
-	border-bottom: 1px solid lightgray;
-	height: 100px;
-	margin: auto;
-
+	margin-top: 35px;
+	padding-left: 15%;
 }
 
 .navigation{
-	width: 900px;
-	float:right;
-
+	width: 50%;
 }
 
 .navigation ul li{
 	float:right;
-	padding: 0px 25px 20px 10px;
-	margin: 0 0px 5px 0;
+	padding: 10px 25px 10px 10px;
 	list-style-type: none;
-
+	color: black;
 }
 
 .navigation a:link {
-		color:black;
 		font-family: sans-serif;
 		font-weight: bold;
     text-decoration: none;
@@ -48,46 +44,30 @@
 }
 
 .navigation a:hover {
-		color:darkred;
+		color:lightgray;
 		background-color: white;
-    text-decoration: none;
-		border-bottom: 3px solid darkred;
-}
-
-.portfolioheader img{
-	border-bottom: 1px solid lightgray;
-	width: 100%;
-	margin-top: -550px;
-	background-size: cover;
+		border-bottom: 3px solid orange;
 }
 
 .portfolioheader{
-		background-image: url("images/food.png");
+		background-image: url("images/brunchflattened.jpg");
 		background-repeat:repeat;
 		width:100%;
-		height: 450px;
-		position: 0;
+		height: 600px;
+		margin-top: -550px;
 		overflow: hidden;
 }
 
-.portfolioheader_title{
-	top: 28%;
-	position: relative;
-	background-color: transparent;
-	margin-bottom: 0px;
-}
-
-.portfolioheader h1{
+.portfolioheader_title h1{
 	color: white;
-	padding: 30px;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin: 20% 25% 0 25%;
+	padding: 10px;
 	text-align: center;
 	font-style: bold;
 	font-family: "Anders";
-	font-size: 2.2em ;
+	font-size: 2.4em ;
 	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, 0.75);(0, 0, 10);
+	/*background-color: rgba(0, 0, 0, 0.75);(0, 0, 10);*/
 }
 
 .portfolioheader a{
@@ -95,19 +75,16 @@
 }
 
 .portfolioheader_title p{
-	background-color:inherit;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin: 0 25% 0 25%;
 	left: 35%;
 	right: 28%;
 	padding-top: 20px;
 	font-size: 1.4em ;
 	font-family: sans-serif;
 	font-weight: 100;
-
 }
 
-#button{
+/*#button{
 	width: 250px;
 	height:45px;
 	border-radius: 5px;
@@ -127,7 +104,7 @@
 #button:hover{
 	text-decoration: none;
 	background-color: white;
-}
+}*/
 
 .toprecipes{
 	background-color: white;
@@ -280,4 +257,56 @@ hr.style-two {
 	height: 8px;
 	clear: both;
 	border-top: 2px solid darkred;
+}
+
+/*RECIPE */
+
+.recipe{
+	margin-left: 10%;
+	margin-right: 15%;
+	padding-top: 5%;
+}
+
+.recipe p{
+	font-family: Verdana;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.recipe h4{
+	font-size: .8em;
+	line-height: 1em;
+}
+
+.recipe ul{
+	line-height: 1.6em;
+	font-family: Verdana;
+	list-style-type: none;
+	padding-left: 10%;
+	padding-top: 10%;
+}
+
+.recipe h1{
+	font-family:"Anders";
+	font-size: 2.5em;
+}
+
+.instructions {
+	width: 60%;
+	float:left;
+	margin-bottom: 10%;
+}
+
+.instructions p{
+	padding-bottom: 3%;
+	line-height: 1.2em;
+}
+
+.ingredients {
+	width: 30%;
+	height: 300px;
+	margin: -5% 0 15% 0;
+	border-left: 1px dashed lightgray;
+	background-color: white;
+	float:right;
 }
