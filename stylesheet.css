@@ -3,44 +3,51 @@
 	padding:0;
 }
 
-/*.topbar{
+.topbar{
 	border-top: 5px solid black;
-}*/
+}
+
 .topcontainer {
 	width: 100%;
 	height: 50px;
-	background-color: rgba(0,0,0,.55);
-}
-
-.header{
-	width: 50%;
+	background-color: #C8762C;
 }
 
 .header h1{
-	font-family: "Anders", sans-serif;
+	font-family: "Gotham", sans-serif;
 	font-size: 2.3em;
 	font-weight: bold;
-	color:darkred;
 	margin-top: 35px;
-	padding-left: 15%;
+	padding-left: 8%;
+}
+
+.header h1 a{
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
 }
 
 .navigation{
 	width: 50%;
+	float: right;
+	margin-bottom: auto;
 }
 
 .navigation ul li{
-	float:right;
-	padding: 10px 25px 10px 10px;
+	padding: 12px 25px 30px 10px;
 	list-style-type: none;
-	color: black;
+	float: right;
 }
 
 .navigation a:link {
 		font-family: sans-serif;
 		font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase;
+		color: black;
+}
+
+.navigation a:visited {
+		color: black;
 }
 
 .navigation a:hover {
@@ -53,21 +60,20 @@
 		background-image: url("images/brunchflattened.jpg");
 		background-repeat:repeat;
 		width:100%;
-		height: 600px;
-		margin-top: -550px;
+		height: 625px;
 		overflow: hidden;
+		margin: 25px 0 25px 0;
 }
 
 .portfolioheader_title h1{
 	color: white;
-	margin: 20% 25% 0 25%;
-	padding: 10px;
+	margin: 15% 15% 0 15%;
 	text-align: center;
 	font-style: bold;
-	font-family: "Anders";
-	font-size: 2.4em ;
+	font-family: "Gotham";
+	font-size: 6em;
 	text-transform: uppercase;
-	/*background-color: rgba(0, 0, 0, 0.75);(0, 0, 10);*/
+	text-shadow: 2px 2px #C8762C;
 }
 
 .portfolioheader a{
@@ -80,45 +86,39 @@
 	right: 28%;
 	padding-top: 20px;
 	font-size: 1.4em ;
-	font-family: sans-serif;
 	font-weight: 100;
 }
 
-/*#button{
+#button{
 	width: 250px;
 	height:45px;
+	margin-left: 39%;
 	border-radius: 5px;
 	border: 3px solid white;
 	background-color: transparent;
-}
-
-#button a{
-	text-decoration: none;
-	color: white;
-	font-size: 1.5em;
-	font-family: Verdana;
-	background-color: transparent;
+	text-align: center;
+	font-family: "Gotham";
+	font-weight: bold;
+	color:white;
 	text-transform: uppercase;
 }
 
 #button:hover{
-	text-decoration: none;
 	background-color: white;
-}*/
+	color: orange;
+
+}
 
 .toprecipes{
-	background-color: white;
-	padding: 6%;
-	margin-left: 3%;
-	margin-right: 2%
+	margin: 2% 2% 6% 3%;
+	clear:both;
 }
 
 .toprecipes h1{
-	font-family: "Anders";
+	font-family: "Gotham";
 	font-size: 2.2em;
 	background-color:transparent;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding: 5px;
 }
 
 img {
@@ -126,10 +126,10 @@ img {
 }
 
 .leftimg {
-	width:325px;
-	padding:5px;
+	width:31%;
+	padding:1%;
 	background-color: white;
-	margin-top: inherit;
+	/*margin-top: inherit;*/
 	display: inline-block;
   opacity: 0.9;
   filter: alpha(opacity=90);
@@ -146,30 +146,20 @@ img {
  	-ms-box-sizing:border-box;
 }
 
-#toprecipes a {
-	background-color: white;
-	color:black;
-	font-size: 1.4em;
-	margin-top: 10px;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-weight: 600;
+.toprecipes h1 {
+	font-size: 2em;
+	margin-top: 50px;
 	text-transform: uppercase;
-	padding: 0;
-	height: 50px;
 }
 
 .toprecipes a {
-	background-color: white;
 	color:black;
 	font-size: 1em;
-	margin-top: 10px;
+	margin-top: 30px;
 	text-decoration: none;
 	font-family: sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
-	padding: 0;
-	height: 50px;
 }
 
 .toprecipes p {
@@ -223,7 +213,7 @@ img {
 }
 
 .right h1{
-	font-family:"Anders";
+	font-family:"Gotham";
 	font-size: 2.5em;
 	padding-left: 50px;
 	color: darkred;
@@ -262,15 +252,13 @@ hr.style-two {
 /*RECIPE */
 
 .recipe{
-	margin-left: 10%;
-	margin-right: 15%;
-	padding-top: 5%;
+	margin: 1% 15% 0 10%;
 }
 
 .recipe p{
 	font-family: Verdana;
 	font-size: 1em;
-	line-height: 1.2em;
+	line-height: 1.4em;
 }
 
 .recipe h4{
@@ -282,31 +270,37 @@ hr.style-two {
 	line-height: 1.6em;
 	font-family: Verdana;
 	list-style-type: none;
-	padding-left: 10%;
-	padding-top: 10%;
+	padding: 2% 0 2% 0;
 }
 
 .recipe h1{
-	font-family:"Anders";
-	font-size: 2.5em;
-}
-
-.instructions {
-	width: 60%;
-	float:left;
-	margin-bottom: 10%;
-}
-
-.instructions p{
-	padding-bottom: 3%;
-	line-height: 1.2em;
+	font-family:"Gotham";
+	font-size: 2.2em;
 }
 
 .ingredients {
-	width: 30%;
-	height: 300px;
-	margin: -5% 0 15% 0;
-	border-left: 1px dashed lightgray;
-	background-color: white;
-	float:right;
+	width: 60%;
+	margin: 0 0 12% 0;
+	float: left;
+}
+
+.instructions{
+	width:35%;
+	float: right;
+	height:100%;
+}
+
+.ingredients h3{
+	 font-size: .9em;
+	 font-family: sans-serif;
+	 padding-bottom: 1%;
+}
+
+.ingredients hr{
+	 	margin-bottom: 2%;
+		color: orange;
+		border: 0;
+		background-color: orange;
+		height: 5px;
+		width: 125px;
 }

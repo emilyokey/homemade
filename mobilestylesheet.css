@@ -6,7 +6,7 @@
   }
 
   .navigation{
-  	width: 100%;
+  	width: 60%;
     display: none;
   }
 
@@ -17,55 +17,46 @@
   }
 
   .portfolioheader{
-  		background-image: url("images/food.png");
-  		background-repeat:repeat;
   		width:100%;
-  		height: 300px;
+  		height: 275px;
   		position: 0;
   }
 
   .portfolioheader img{
-  	border-bottom: 1px solid lightgray;
+  	border-bottom: 1px solid darkred;
   	width: 100%;
-  	margin-top: -50px;
-  	background-size: cover;
+    background-color: white;
+    background-image: image("images/squashmobile");
+
   }
 
+
   .portfolioheader_title{
-  	top: 16%;
+  	top: 12%;
   	position: relative;
-  	margin-bottom: 0px;
   }
 
   .portfolioheader h1{
-  	padding: 10px;
-  	font-size: 1.8em ;
+  	padding: 8px;
+  	font-size: 2em ;
     margin-left: 5%;
   	margin-right: 5%;
   }
 
-  .portfolioheader_title p{
-  	padding-top: 20px;
-  	font-size: 1.2em ;
-  	font-family: sans-serif;
-  	font-weight: 100;
-    margin-left: 5%;
-    margin-right: 5%;
+  #button{
+  	margin-left: 18%;
   }
 
   .toprecipes{
-  	background-color: white;
-  	padding: 4%;
-  	margin-left: 2%;
+  	margin-left: 6%;
   	margin-right: 2%
   }
 
   .toprecipes h1{
-  	font-family: "Anders";
+  	font-family: "Gotham";
   	font-size: 1.8em;
   	background-color:transparent;
     padding-top: 10px;
-  	padding-left: 8px;
   	padding-bottom: 10px;
   }
 
@@ -79,6 +70,11 @@
 
   .left img{
   	display: none;
+  }
+
+  .leftimg {
+  	width:95%;
+  	padding:1%;
   }
 
   .right{
@@ -114,7 +110,7 @@
   /*RECIPE */
 
   .recipe{
-  	margin-left: 10%;
+  	margin-left: 5%;
   	margin-right: 15%;
   	padding-top: 5%;
   }
@@ -139,12 +135,17 @@
   }
 
   .recipe h1{
-  	font-family:"Anders";
-  	font-size: 2.5em;
+  	font-family:"Gotham";
+  	font-size: 2em;
+    padding-bottom: 15px;
   }
 
   .instructions {
   	width: 100%;
+  }
+
+  .instructions img{
+    display: none;
   }
 
   .instructions p{
@@ -157,7 +158,22 @@
   	background-color: white;
     height: auto;
     padding-bottom: 2%;
-    border-left: none;
-
   }
+
+  .recipe ul{
+  	line-height: 1.6em;
+  	font-family: Verdana;
+    font-size: .9em;
+  	list-style-type: none;
+  	padding: 2% 0 0% 0;
+  }
+
+  .recipe p{
+  	line-height: 1.4em;
+  	font-family: Verdana;
+    font-size: 1em;
+  	list-style-type: none;
+  	padding: 2% 0 0% 0;
+  }
+
 }
