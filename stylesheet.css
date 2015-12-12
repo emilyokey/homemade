@@ -13,7 +13,6 @@
 	background-color: #C8762C;
 }
 
-
 .header h1{
 	font-family: "Gotham", sans-serif;
 	font-size: 2.3em;
@@ -38,7 +37,6 @@
 	padding: 12px 25px 30px 10px;
 	list-style-type: none;
 	float: right;
-
 }
 
 .navigation a:link {
@@ -46,12 +44,10 @@
 		font-weight: bold;
     text-decoration: none;
 		color: black;
-
 }
 
 .navigation a:visited {
 		color: black;
-
 }
 
 .navigation a:hover {
@@ -64,15 +60,14 @@
 		background-image: url("images/brunchflattened.jpg");
 		background-repeat:repeat;
 		width:100%;
-		height: 600px;
-		margin-top: 5px;
+		height: 625px;
 		overflow: hidden;
+		margin: 25px 0 25px 0;
 }
 
 .portfolioheader_title h1{
 	color: white;
 	margin: 15% 15% 0 15%;
-	padding: 10px;
 	text-align: center;
 	font-style: bold;
 	font-family: "Gotham";
@@ -91,39 +86,31 @@
 	right: 28%;
 	padding-top: 20px;
 	font-size: 1.4em ;
-	font-family: sans-serif;
 	font-weight: 100;
 }
 
 #button{
 	width: 250px;
 	height:45px;
-	margin-left: 38%;
+	margin-left: 39%;
 	border-radius: 5px;
 	border: 3px solid white;
 	background-color: transparent;
-}
-
-#button a{
-	text-decoration: none;
-	color: white;
-	font-size: 1em;
-	font-family: Verdana;
+	text-align: center;
+	font-family: "Gotham";
+	font-weight: bold;
+	color:white;
 	text-transform: uppercase;
 }
 
-#button a:hover{
-	text-decoration: none;
-	color:orange;
-}
-
 #button:hover{
-	text-decoration: none;
 	background-color: white;
+	color: orange;
+
 }
 
 .toprecipes{
-	margin: 2% 2% 6% 6%;
+	margin: 2% 2% 6% 3%;
 	clear:both;
 }
 
@@ -131,7 +118,7 @@
 	font-family: "Gotham";
 	font-size: 2.2em;
 	background-color:transparent;
-	padding: 10px;
+	padding: 5px;
 }
 
 img {
@@ -139,8 +126,8 @@ img {
 }
 
 .leftimg {
-	width:328px;
-	padding:5px;
+	width:31%;
+	padding:1%;
 	background-color: white;
 	/*margin-top: inherit;*/
 	display: inline-block;
@@ -265,8 +252,7 @@ hr.style-two {
 /*RECIPE */
 
 .recipe{
-	margin: 0 15% 0 10%;
-	padding-top: 5%;
+	margin: 1% 15% 0 10%;
 }
 
 .recipe p{
