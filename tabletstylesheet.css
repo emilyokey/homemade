@@ -56,6 +56,8 @@
 
   .left{
    display: none;
+   width:30%;
+
   }
 
   .left img{
@@ -67,7 +69,6 @@
   	width:100%;
   	margin-top: 35px;
   	padding-top: 25px;
-  	margin-right: 15px;
   }
 
   .right h1{
@@ -82,7 +83,7 @@
   	font-size: 1.1em;
   	line-height: 1.4em;
   	font-weight: bold;
-  	padding:10px 20px 10px 50px;
+    padding:10px 25px 10px 50px;
   }
 
   .right p{
