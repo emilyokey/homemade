@@ -93,4 +93,43 @@
   	padding: 0 30px 0 50px;
   }
 
+
+  #cooktimes{
+  	background-color: white;
+  	height: 500px;
+  	margin: 2% 10% 8% 10%;
+  }
+
+  #time{
+  	width:40%;
+  	height:90px;
+  	margin: 2%;
+  	float: left;
+  	padding: 10px;
+  	border: 2px solid darkred;
+  	border-radius: 6px;
+  }
+
+  #time h3{
+  	font-size: 1.4em;
+  	font-family: sans-serif;
+  	padding:0% 5% 2% 5%;
+  	margin-top: 5%;
+  }
+
+  #time h3 i{
+  	color:black;
+  }
+
+  #cooktimes p{
+    padding:1% 5% 2% 5%;
+  	font-family: sans-serif;
+  	font-size: .7em;
+  }
+
+  #cooktimes a{
+  	text-decoration: none;
+  	color:black;
+  }
+
 }
