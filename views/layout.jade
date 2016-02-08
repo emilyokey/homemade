@@ -2,16 +2,52 @@ doctype html
 html
 
   head
+    title homemade
     meta(charset='utf8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
     meta(name='description', content='description of your site')
     meta(name='author', content= "author of the site")
-    //- uncomment if your site is responsive!
-    //- meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    link(rel="stylesheet" type="text/css" href="./stylesheet.css")
+    link(rel="stylesheet" type="text/css" href="./mobilestylesheet.css")
+    link(rel="stylesheet" type="text/css" href="./tabletstylesheet.css")
+    //- FYI: This doesn't work.
+    //- You want something like this http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp
+    link(href="fonts/Anders.ttf" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
     title= _path
     != css()
 
   body
+    .topbar
+    .TOPCONTAINER
+      .header
+        .navigation
+          ul
+            li
+              a(href='effort.html') effort level
+            li
+              a(href='category.html') category
+            li
+              a(href='cooktime.html') cook time
+            li
+              p search by:
+        h1
+          a(href='index.html') homemade
+
     block content
+
+    .footer
+      center
+        ul
+          i.material-icons(style='font-size:30px; padding-right:20px;')
+            a(href='mailto:emily.okey@gmail.com') email
+          a(href='https://github.com/emilyokey')
+            img(src='../../images/Social/GitHub-Mark-Light-120px-plus.png', style='width:30px; padding-right:20px;')
+          a(href='http://www.twitter.com/emilyokey')
+            img(src='../../images/Social/twitter-icon.png', style='width:35px; ')
+
 
     != js()
