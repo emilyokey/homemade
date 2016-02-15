@@ -19,10 +19,12 @@ module.exports =
       access_token: process.env.access_token
       space_id: 'y9pqor87v3fr'
       content_types: 
-        recipe:
+        recipes:
           id: 'recipe'
           template: 'views/_recipe.jade'
           path: (e) -> "recipes/#{slugify(e.title)}"
+          transform: (recipe) ->
+            recipe.link = '/recipes/' + slugify(recipe.title) + '.html'
   ]
 
   stylus:

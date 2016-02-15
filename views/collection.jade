@@ -1,0 +1,49 @@
+extends layout
+
+block content
+
+  h1 Collection examples
+
+  h2 List recipes
+  ul
+    - for recipe in contentful.recipes
+      li: strong
+        a(href=recipe.link)
+          != recipe.title
+  
+
+  h2 Sort recipes by creation date
+  ul
+    - 
+      contentful.recipes.sort(function (a,b) { 
+        return a.sys.createdAt - b.sys.createdAt 
+      })
+      .reverse()
+
+    - for recipe in contentful.recipes
+      li= recipe.title
+        em= recipe.sys.createdAt
+
+
+
+  h2 Sort recipes by cook time
+  - contentful.recipes.sort(function(a,b) { return a.cookTime - b.cookTime })
+  ul
+    - for recipe in contentful.recipes
+      li= recipe.title
+        strong= ' ' + recipe.cookTime
+
+
+  h2 Filter recipes by one ingredient (flour)
+  ul
+    -
+      var filteredRecipes = contentful.recipes.filter(function(r) {
+        return r.ingredients.some(function(ing) {
+            return ing.name == 'flour'
+          }) 
+        })
+
+    - for(recipe of filteredRecipes)
+      li= recipe.title
+
+
