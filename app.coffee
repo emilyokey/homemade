@@ -46,7 +46,16 @@ module.exports =
     # so pretty
     pretty: true
 
+  locals:
+    slugify: slugify
+    marked: (content) ->
+      if content
+        marked(content)
+
 
 # remove spaces from title
 slugify= (title) ->
-  title.split(' ').join('-')
+  slug = title.replace(/[^\w\s]/, '')
+  slug = slug.toLowerCase()
+  slug = slug.replace(/\s+/g, '-')
+  return slug
