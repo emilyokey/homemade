@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  h1= entry.title
+  p
+    != marked(entry.description)
+
+  if entry.ingredients
+    h2 Ingredients
+    ul
+      each ing in entry.ingredients
+        li= ing.name
+          strong
+            != ' ' + ing.amount

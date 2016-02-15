@@ -3,6 +3,9 @@ rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
+contentful   = require 'roots-contentful'
+marked       = require 'marked'
+dotenv       = require('dotenv').config()
 
 module.exports =
   # This mofo is gonna move every damn thing in this folder to /public 
@@ -10,8 +13,18 @@ module.exports =
   ignores: ['README.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
-    js_pipeline(files: 'roots-assets/js/*.coffee'),
+    js_pipeline(files: 'roots-assets/js/*.coffee')
     css_pipeline(files: 'roots-assets/css/*.styl')
+    contentful
+      access_token: process.env.access_token
+      space_id: 'y9pqor87v3fr'
+      content_types: 
+        recipes:
+          id: 'recipe'
+          template: 'views/_recipe.jade'
+          path: (e) -> "recipes/#{slugify(e.title)}"
+          transform: (recipe) ->
+            recipe.link = '/recipes/' + slugify(recipe.title) + '.html'
   ]
 
   stylus:
@@ -34,3 +47,17 @@ module.exports =
   jade:
     # so pretty
     pretty: true
+
+  locals:
+    slugify: slugify
+    marked: (content) ->
+      if content
+        marked(content)
+
+
+# remove spaces from title
+slugify= (title) ->
+  slug = title.replace(/[^\w\s]/, '')
+  slug = slug.toLowerCase()
+  slug = slug.replace(/\s+/g, '-')
+  return slug
